@@ -5,6 +5,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {
@@ -37,6 +39,9 @@ module.exports = {
         },
         black: {
           900: "#000"
+        },
+        gray: {
+          200: "#F8F8F8"
         },
         white: {
           100: "#FFF"
