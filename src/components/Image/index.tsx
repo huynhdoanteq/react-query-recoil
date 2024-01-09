@@ -9,7 +9,7 @@ interface Props {
   onClick?: () => void;
 }
 
-const Icon: FC<Props> = ({ src, alt, width, height, className, onClick }) => {
+const Image: FC<Props> = ({ src, alt, width, height, className, onClick }) => {
   return (
     <img
       src={src}
@@ -22,4 +22,4 @@ const Icon: FC<Props> = ({ src, alt, width, height, className, onClick }) => {
   );
 };
 
-export default Icon;
+export default Image;

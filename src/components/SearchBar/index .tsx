@@ -1,16 +1,15 @@
 import Search from "@src/assets/icons/Search.svg";
-import Icon from "../Icon";
+import Image from "../Image";
 import Input from "../Input";
 
 const SearchBar = () => {
   return (
-    <div className="flex bg-gray-200">
-      <Icon src={Search} alt="search icon" className="w-[25px] h-[25px]" />
+    <div className="bg-gray-200 w-full flex h-[30px] items-center">
+      <Image src={Search} alt="search icon" className="w-[1.5rem] h-[1.5rem]" />
       <Input
         type="input"
         placeHolder="Search"
-        value="hi"
-        className="bg-gray-200"
+        className="bg-gray-200 pl-2 text-sm"
       />
     </div>
   );

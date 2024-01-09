@@ -45,6 +45,12 @@ module.exports = {
         },
         white: {
           100: "#FFF"
+        },
+        blue: {
+          600: "#4339F2"
+        },
+        green: {
+          600: "#34B53A"
         }
       },
       boxShadow: {

@@ -1,8 +1,17 @@
+import { cn } from "@src/utils/commonUtils";
 import type { ElementType, FC, ReactNode } from "react";
 
 export interface ButtonProps<T extends ElementType> {
   as?: T;
-  variant?: "primary" | "secondary" | "tertiary" | "disabled";
+  variant?:
+    | "filled"
+    | "light"
+    | "outline"
+    | "transparent"
+    | "white"
+    | "subtle"
+    | "default"
+    | "gradient";
   rounded?: boolean;
   noShadow?: boolean;
   size?: "xs" | "sm" | "md" | "lg";
@@ -20,7 +29,11 @@ interface ContentProps {
 }
 
 const Button: FC<ContentProps> = ({ className, children }) => {
-  return <button className={className}>{children}</button>;
+  return (
+    <button className={cn("py-2 px-6 rounded-lg", className)}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

@@ -7,7 +7,7 @@ export const ListIcon = [
   {
     icon: "/src/assets/icons/Icon1.svg",
     alt: "Icon1",
-    link: "/",
+    link: "/dashboard",
   },
   {
     icon: "/src/assets/icons/Icon2.svg",
@@ -39,9 +39,13 @@ export const ListIcon = [
     alt: "Icon7",
     link: "/",
   },
+];
+
+export const ListAvatar = [
   {
-    icon: "/src/assets/icons/Icon8.svg",
-    alt: "Icon8",
-    link: "/",
+    image: "/src/assets/icons/User.png",
+  },
+  {
+    image: "/src/assets/icons/Photo.png",
   },
 ];
