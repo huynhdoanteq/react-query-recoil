@@ -1,16 +1,19 @@
-import type { Story, StoryDefault } from "@ladle/react";
+import type { StoryDefault } from "@ladle/react";
+import Button from "@src/components/Button";
 
-export const Button: Story = () => <button>My Button</button>;
+interface Props {
+  className?: string;
+}
 
 export default {
-  title: "Atoms",
-} satisfies StoryDefault;
+  title: "Button",
+  args: {
+    className: "outline",
+  },
+} satisfies StoryDefault<Props>;
 
-export const ButtonStory: Story = () => {
-  return <Button />;
+export const ButtonStories = () => {
+  return <Button className="bg-white-100 text-blue-600 text-sm">test</Button>;
 };
 
-ButtonStory.storyName = "Button";
-ButtonStory.meta = {
-  iframed: true,
-};
+ButtonStories.storyName = "Button";

@@ -1,4 +1,4 @@
-export const ListIcon = [
+export const ListIcons = [
   {
     icon: "/src/assets/icons/CraftworkLogo.svg",
     alt: "Icon1",

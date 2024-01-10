@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import Image from "../Image";
-import { ListIcon } from "@src/utils/initialData";
+import { ListIcons } from "@src/utils/initialData";
 import Setting from "@src/assets/icons/Icon8.svg";
 
 const SideBar = () => {
   return (
     <div className="sidebar rounded-r-[20px] bg-white-100 h-full relative">
       <ul className="list-none mt-4 px-2">
-        {ListIcon.map((item: any) => (
-          <li className="p-4 grid place-items-center first:border-b first:border-gray-300">
+        {ListIcons.map((item, index) => (
+          <li
+            className="p-4 grid place-items-center first:border-b first:border-gray-300"
+            key={index}
+          >
             <Image
               src={item.icon}
               alt={item.alt}

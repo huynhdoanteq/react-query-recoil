@@ -20,7 +20,7 @@ const MainLayout: FC<Props> = ({ children }) => {
         <BorderRounded className="bg-white-100 max-w-[28rem]">
           <div className="flex justify-between pb-4">
             <div className="flex p-4 justify-start w-[90%] items-center">
-              <div className="w-[20%]">
+              <div className="w-[20%] grid place-items-center">
                 <Image
                   src={Avatar}
                   alt="avt"
