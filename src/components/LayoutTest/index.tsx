@@ -35,7 +35,6 @@ const LayoutTest = () => {
     setLoadUserInfo(data);
   }, [data, setLoadUserInfo]);
 
-  console.log(loadUserInfo);
 
   if (isLoading) {
     return (

@@ -25,7 +25,7 @@ const UserInfoCard: FC<Props> = ({
             className="rounded-full w-[4.375rem] h-[4.375rem]"
           />
         </div>
-        <div className="ml-3">
+        <div className="ml-3 text-left">
           <h2>{userName}</h2>
           <h4 className="text-gray-300 text-left">{userLocation}</h4>
         </div>

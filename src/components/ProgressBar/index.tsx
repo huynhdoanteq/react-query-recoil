@@ -4,24 +4,28 @@ import ProgressBarItem from "../ProgressBarItem";
 
 interface Props {
   percent: number;
-  progressClassName?: string;
-  innerClassName?: string;
+  progressBar?: string;
+  innerProgressbar?: string;
   socialName: string;
 }
 
 const ProgressBar: FC<Props> = ({
   percent,
-  progressClassName,
-  innerClassName,
+  progressBar,
+  innerProgressbar,
   socialName,
 }) => {
   return (
-    <div className="pb-2">
-      <TextCount socialName={socialName} percent={percent} />
+    <div className="pb-4">
+      <TextCount
+        socialName={socialName}
+        percent={percent}
+        colorProgress={innerProgressbar || ""}
+      />
       <ProgressBarItem
         percent={percent}
-        progressClassName={progressClassName}
-        innerClassName={innerClassName}
+        progressBar={progressBar}
+        innerProgressbar={innerProgressbar}
       />
     </div>
   );

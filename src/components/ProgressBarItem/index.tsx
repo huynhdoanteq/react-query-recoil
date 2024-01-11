@@ -3,30 +3,27 @@ import type { FC } from "react";
 
 interface Props {
   percent: number;
-  progressClassName?: string;
-  innerClassName?: string;
+  progressBar?: string;
+  innerProgressbar?: string;
 }
 
 const ProgressBarItem: FC<Props> = ({
-  percent = 10,
-  progressClassName,
-  innerClassName,
+  percent = 0,
+  progressBar,
+  innerProgressbar,
 }) => {
-  const percentWidth = `w-[${percent}%]`;
+  const percentWidth = `${percent}%`;
   return (
     <div
-      className={cn(
-        "progress-bar w-full h-[0.5rem] relative rounded z-0",
-        progressClassName
-      )}
+      className={cn("progress-bar w-full h-[0.5rem] relative rounded z-0")}
+      style={{ backgroundColor: progressBar }}
     >
-      <div
+      <span
         className={cn(
-          "progress-inner absolute h-[0.5rem] rounded top-0 left-0 z-8",
-          innerClassName,
-          percentWidth
+          "progress-inner absolute h-[0.5rem] rounded top-0 left-0 z-8"
         )}
-      ></div>
+        style={{ width: percentWidth, backgroundColor: innerProgressbar }}
+      ></span>
     </div>
   );
 };

@@ -15,3 +15,24 @@ export const userInfo = atom({
     userId: 0,
   },
 });
+
+export const userSocialAnalyticsState = atom({
+  key: "userSocialAnalyticsState",
+  default: [
+    {
+      user: {
+        avatar: "",
+        name: "",
+        location: "",
+      },
+      socialMedia: [
+        {
+          name: "",
+          percent: 0,
+          progressBar: "",
+          innerProgressbar: "",
+        },
+      ],
+    },
+  ],
+});
