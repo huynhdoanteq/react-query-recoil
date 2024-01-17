@@ -36,3 +36,15 @@ export const userSocialAnalyticsState = atom({
     },
   ],
 });
+
+export const socialAnalyticsState = atom({
+  key: "socialAnalyticsState",
+  default: [
+    {
+      socialName: "",
+      percent: 0,
+      innerColor: "",
+      circleColor: "",
+    },
+  ],
+});

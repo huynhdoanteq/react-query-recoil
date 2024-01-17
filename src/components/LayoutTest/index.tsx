@@ -35,7 +35,6 @@ const LayoutTest = () => {
     setLoadUserInfo(data);
   }, [data, setLoadUserInfo]);
 
-
   if (isLoading) {
     return (
       <div className="todo">
